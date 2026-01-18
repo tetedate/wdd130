@@ -22,7 +22,7 @@ main img {
    height: auto;
    border: 120px;
    padding: 5px;
-   box-shadow: #000;
+   box-shadow: 200px;
 }
 
 aside {
