@@ -22,7 +22,6 @@ text-align: center;
 font-size: 2.5em;
 }
 
-
 picture img{
     display: block;
     max-width: 450px;
@@ -50,7 +49,6 @@ section h2 {
     padding-bottom: 5px;
     }
 
-
-    section ul {
-        padding-left: 25px;
+section ul {
+    padding-left: 25px;
     }
