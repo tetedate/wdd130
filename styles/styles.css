@@ -1,43 +1,88 @@
+:root {
+   --main-color: #0a66c2;
+   --accent-color: #f3f6f8;
+   --text-color: #1d2226;
+   --secondary-color: #e7f3ff;
+   --border-color: #d1e7f7;
+   --footer-bg: #283e4a;
+   --footer-text: #fff;
+   --nav-bg: #0a66c2;
+   --nav-link: #fff;
+   --box-bg: #e7f3ff;
+   --box-border: #0a66c2;
+   --box-text: #1d2226;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   color: var(--main-color);
+}
+
+header,
+.grid,
+footer {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
 nav {
-   background-color: darkblue;
-   padding: 10px;
+   background-color: var(--nav-bg);
+   padding: 1rem;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 nav a {
-   color: white;
    display: block;
-   padding: 20px;
+   padding: 0.5rem;
+   text-decoration: none;
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--nav-link);
 }
 
 main {
-   max-width: 540px;
+   max-width: 50rem;
+   grid-column: 2/3;
+   margin: 1rem 0;
+   background: var(--accent-color);
+   color: var(--text-color);
 }
 
 h1 {
-   color: darkblue;
+   border-bottom: 1px solid var(--main-color);
+   color: var(--main-color);
 }
 
 main img {
-   width: 150px;
+   width: 19rem;
    height: auto;
-   border: 120px;
-   padding: 5px;
-   box-shadow: 5px 5px 20px #333333;
+   margin: 1rem 0 1rem 1rem;
+   float: right;
 }
 
 aside {
-   width: 20em;
-   margin: 40%;
-   border: 2px solid;
-   padding: 2rem;
-   background-color: #aaaaaa;
-   color: aqua;
-   text-align: center;
+   max-width: 30rem;
+   position: relative;
 }
 
 aside img {
-   width: 200px;
+   width: 100%;
    height: auto;
+   display: block;
+}
+
+aside h2 {
+   position: absolute;
+   top: 50px;
+   left: 165px;
+
 }
 
 img {
@@ -56,4 +101,14 @@ footer {
    margin-top: 15px;
    border-top: 1px solid #000;
    text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+   margin: 1rem;
+   padding: 1rem;
+   border: 1px solid #0a66c2;
+   color: var(--text-color);
+   background-color: var(--box-text);
 }
