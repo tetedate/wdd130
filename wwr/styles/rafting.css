@@ -1,5 +1,5 @@
 :root {
-    --primary-color: ;
+    --primary-color: #90ee90;
     /* forest green */
     --secondary-color: #f4a261;
     /* warm sand*/
@@ -25,7 +25,7 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-image: url("images/raftintete.jpg");
+    background-image: url("images/raftingtete.jpg");
     background-size: contain;
     background-position: center;
 
@@ -35,7 +35,7 @@ header,
 main,
 footer {
     width: 840px;
-    margin: O auto;
+    margin: 0;
 }
 
 h1,
@@ -54,6 +54,7 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+    background-color: var(--secondary-color);
 }
 
 .hero {
