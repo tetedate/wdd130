@@ -14,6 +14,10 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem;
 }
 
 * {
@@ -91,4 +95,64 @@ h1 {
 .hero article {
     position: absolute;
     font-style: oblique;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: aquamarine;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #007acc;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* text on left, social icons on right */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #004466;
+    color: #fff;
+}
+
+/* Social media nav */
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    /* spacing between icons */
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.1);
+    /* subtle hover effect */
+}
+
+.history h2 {
+    margin-bottom: 1rem;
+}
+
+.history-layout p {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.history-layout img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
