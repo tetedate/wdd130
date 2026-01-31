@@ -156,3 +156,20 @@ footer .socialmedia img:hover {
     height: auto;
     border-radius: 8px;
 }
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery figure {
+    text-align: center;
+    width: 18%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
