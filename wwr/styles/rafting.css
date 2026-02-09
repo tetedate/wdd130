@@ -172,10 +172,33 @@ footer .socialmedia img:hover {
 .img figure {
     text-align: center;
     width: 18%;
+
 }
 
 .gallery img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.image-box {
+    display: inline-block;
+    /* keeps image+caption together */
+    text-align: center;
+    /* centers caption under image */
+    margin: 20px;
+}
+
+.image-box img {
+    width: 300px;
+    /* adjust size */
+    display: block;
+    /* ensures caption goes below */
+}
+
+.image-box figcaption {
+    margin-top: 8px;
+    /* space between image and caption */
+    font-style: italic;
+    color: #555;
 }
