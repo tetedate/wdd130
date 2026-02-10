@@ -32,7 +32,10 @@ body {
     background-image: url("images/raftingtete.jpg");
     background-size: contain;
     background-position: center;
-
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width: 500px;
 }
 
 header,
@@ -172,13 +175,14 @@ footer .socialmedia img:hover {
 .img figure {
     text-align: center;
     width: 18%;
+    display: inline-block;
 
 }
 
 .gallery img {
     width: 100%;
     height: auto;
-    display: block;
+
 }
 
 .image-box {
@@ -190,15 +194,60 @@ footer .socialmedia img:hover {
 }
 
 .image-box img {
-    width: 300px;
+    width: 20px;
     /* adjust size */
     display: block;
     /* ensures caption goes below */
 }
 
 .image-box figcaption {
-    margin-top: 8px;
+    margin-top: 2px;
     /* space between image and caption */
     font-style: italic;
     color: #555;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.checkbox {
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a9e;
 }
