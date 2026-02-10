@@ -216,11 +216,12 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 20%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+
 }
 
 .radio-group {
@@ -250,4 +251,18 @@ button {
 
 button:hover {
     background-color: #005a9e;
+}
+
+.flex-container {
+    display: flex;
+    /* Active Flexbox */
+    justify-content: space-around;
+    /* Aligne horizontalement */
+    align-items: center;
+    /* Aligne verticalement */
+}
+
+.item {
+    background: lightblue;
+    padding: 20px;
 }
