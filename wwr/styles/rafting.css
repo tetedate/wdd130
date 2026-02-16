@@ -11,15 +11,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding: 1rem;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -27,242 +18,134 @@ header {
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-image: url("images/raftingtete.jpg");
-    background-size: contain;
-    background-position: center;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    max-width: 500px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0;
+/* Header and navigation */
+header {
+    background: #004466;
+    color: #fff;
+    padding: 1rem;
+
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-    background-color: var(--secondary-color);
-}
-
-.hero {
-    position: relative;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-    line-height: 0;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
+header img {
+    max-width: 10%;
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-    /* white text - make sure there is enough contrast with the background-color */
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-.hero article {
-    position: absolute;
-    font-style: oblique;
-}
-
-header nav ul {
+nav ul {
     display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
+    justify-content: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 3rem;
+
 }
 
-header nav a {
-    text-decoration: none;
-    color: aquamarine;
-    font-weight: 500;
-}
-
-header nav a:hover {
-    color: #007acc;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    /* text on left, social icons on right */
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #004466;
+nav a {
     color: #fff;
-}
-
-/* Social media nav */
-footer .socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    /* spacing between icons */
-}
-
-footer .socialmedia img:hover {
-    transform: scale(1.1);
-    /* subtle hover effect */
-}
-
-.history h2 {
-    margin-bottom: 1rem;
-}
-
-.history-layout p {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: center;
-}
-
-.history-layout img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.img figure {
-    text-align: center;
-    width: 18%;
-    display: inline-block;
-
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-
-}
-
-.image-box {
-    display: inline-block;
-    /* keeps image+caption together */
-    text-align: center;
-    /* centers caption under image */
-    margin: 20px;
-}
-
-.image-box img {
-    width: 20px;
-    /* adjust size */
-    display: block;
-    /* ensures caption goes below */
-}
-
-.image-box figcaption {
-    margin-top: 2px;
-    /* space between image and caption */
-    font-style: italic;
-    color: #555;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
+    text-decoration: none;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 20%;
-    padding: 8px;
-    margin-top: 5px;
+/* Company info section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+/* Contact form */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-
 }
 
-.radio-group {
-    margin-top: 10px;
-}
-
-.radio-group label {
-    font-weight: normal;
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.checkbox {
-    margin-top: 15px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #0078d7;
-    color: white;
+form button {
+    background: #004466;
+    color: #fff;
     border: none;
+    padding: 1rem 2rem;
     border-radius: 4px;
-    font-size: 16px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #005a9e;
+form button:hover {
+    background: #006699;
 }
 
-.flex-container {
+/* Map section */
+.map {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Employee section */
+.employees {
+    padding: 2rem;
+    background: #eef;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.profiles {
     display: flex;
-    /* Active Flexbox */
-    justify-content: space-around;
-    /* Aligne horizontalement */
-    align-items: center;
-    /* Aligne verticalement */
+    justify-content: center;
+    gap: 2rem;
 }
 
-.item {
-    background: lightblue;
-    padding: 20px;
+.profile {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #004466;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social-icons {
+    margin-top: 0.5rem;
+
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 2rem;
+    text-decoration: none;
+    align-content: end;
 }

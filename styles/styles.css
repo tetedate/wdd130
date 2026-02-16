@@ -40,6 +40,19 @@ nav {
    align-items: center;
 }
 
+nav a {
+   color: white;
+   text-decoration: none;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   gap: 1em;
+}
+
 main {
    max-width: 50rem;
    margin: 1rem 0;
@@ -98,6 +111,7 @@ footer {
    background-color: var(--footer-bg);
    color: #fff;
    padding: 2rem 1rem;
+   text-align: center;
 }
 
 footer p {
@@ -121,4 +135,52 @@ ul {
    border: 1px solid #0a66c2;
    color: var(--text-color);
    background-color: var(--box-text);
+}
+
+.hero {
+   background: url('images/hero.jpg') center/cover no-repeat;
+   color: white;
+   text-align: center;
+   padding: 3em 1em;
+}
+
+.cta-button {
+   background: #ff6600;
+   color: white;
+   padding: 0.8em 1.2em;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+.trip-grid {
+   display: flex;
+   gap: 2em;
+   justify-content: center;
+   padding: 2em;
+}
+
+.trip img {
+   width: 100%;
+   border-radius: 8px;
+}
+
+.trip-table {
+   padding: 2em;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+table th,
+table td {
+   border: 1px solid #ddd;
+   padding: 0.8em;
+   text-align: center;
+}
+
+table th {
+   background: #004466;
+   color: white;
 }
